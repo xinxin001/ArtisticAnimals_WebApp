@@ -35,9 +35,9 @@ function TopBar(props) {
       <div className={classes.root}>
       <AppBar position="static">
       <Toolbar>
-        <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={goHome}>
+        {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={goHome}>
           <HomeIcon />
-        </IconButton>
+        </IconButton> */}
         <Typography variant="h6" className={classes.title}>
           {props.title}
         </Typography>

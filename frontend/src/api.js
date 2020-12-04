@@ -1,21 +1,12 @@
 import axios from 'axios';
 
-export const getImagePrediction = (data) => {
-    return axios.post('/predict/image', data)
-    .then(res => {
-      return res.data;
-    })
-    .catch(err => {
-      alert(err);
-    })
-}
-
-export const getTextPrediction = (data) => {
-    return axios.post('/predict/text', data)
-    .then(res => {
-        return res.data
-    })
-    .catch(err => {
-        alert(err);
-    })
+export const getGeneratedImage = () => {
+  return axios.post('/generate/image')
+  .then(res => {
+    console.log(res)
+    return res.data;
+  })
+  .catch(err => {
+    alert(err);
+  })
 }
